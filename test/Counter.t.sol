@@ -97,7 +97,7 @@ contract CounterTest is BaseTest {
 
         // Perform a test swap //
         uint256 amountIn = 1e18;
-        BalanceDelta swapDelta = swapRouter.swapExactTokensForTokens({
+        BalanceDelta swapDelta = swapRoutjer.swapExactTokensForTokens({
             amountIn: amountIn,
             amountOutMin: 0, // Very bad, but we want to allow for unlimited price impact
             zeroForOne: true,
